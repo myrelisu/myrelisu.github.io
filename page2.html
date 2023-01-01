@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="page2Styles.css">
+  </head>
+  <body>
+    <header>
+        <h1><img src="title.png" alt="RiGrader logo" width="250" height="40" position="center"></h1>
+    </header>
+    <main>
+        <h1>Grade Calculator</h1>
+        <form>
+        <label for="class-name">Class Name:</label>
+        <input type="text" id="class-name" name="class-name">
+        <br>
+        <label for="test-number">Test Number:</label>
+        <select id="test-number" name="test-number">
+            <option value="1">Test 1</option>
+            <option value="2">Test 2</option>
+            <option value="3">Test 3</option>
+            <option value="3">Test 4</option>
+        </select>
+        <br>
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name">
+        <br></br>
+        <label for="reading-exam">Reading:</label>
+        <input type="number" id="reading-exam" name="reading-exam" min="0" max="32" placeholder="/32">
+        <br></br>
+        <label for="listening-exam">Listening:</label>
+        <input type="number" id="listening-exam" name="listening-exam" min="0" max="25" placeholder="/25">
+        <br></br>
+        <label for="writing-pt1-exam">Writing Pt.1:</label>
+        <input type="number" id="writing-pt1-exam" name="writing-pt1-exam" min="0" max="20" placeholder="/20">
+        <br></br>
+        <label for="writing-pt2-exam">Writing Pt.2:</label>
+        <input type="number" id="writing-pt2-exam" name="writing-pt2-exam" min="0" max="20" placeholder="/20">
+        <br></br>
+        <label for="speaking-exam">Speaking:</label>
+        <input type="number" id="speaking-exam" name="speaking-exam" min="0" max="20" placeholder="/20">
+        <br></br>
+        <button type="button" id="add-student-button">Add Student</button>
+            
+        <script src="app.js"></script>
+
+        </form>
+        <h3>Students List</h3>
+        <ul id="students-list"></ul>
+        
+        <h3>Class List</h3>
+        <ul id="class-list"></ul>
+    </main>

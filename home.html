@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>RiGrader</title>
+    <link rel="stylesheet" href="HomeStyles.css">
+</head>
+
+<body>
+    <header>
+        <h1><img src="title.png" alt="RiGrader logo" width="250" height="40" position="center"></h1>
+    </header>
+    <main>
+        <h2>Welcome.</h2>
+        <p>Our online gradebook makes it easy to track grades and calculate results for your English as a second language Cambridge classes.</p>
+        <p>With our intuitive interface, you can input grades for assignments and exams, and our grade calculator will automatically calculate the overall percentage for each student.</p>
+        <form form action="page2.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit" onclick="window.location.href='page2.html'">Login</button>
+            <script src="homeScript.js"></script>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright 2021 RiGrader</p>
+    </footer>
+</body>
+
+</html>
